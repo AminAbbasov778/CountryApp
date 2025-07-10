@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.fragments.HomeFragment">
+
+ <com.google.android.material.imageview.ShapeableImageView
+     android:id="@+id/ivLocation"
+     android:layout_width="100dp"
+     android:layout_height="110dp"
+     android:layout_marginTop="100dp"
+     android:src="@drawable/location"
+     app:layout_constraintLeft_toLeftOf="parent"
+     app:layout_constraintRight_toRightOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     >
+
+ </com.google.android.material.imageview.ShapeableImageView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvChooseYourCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/choose_your_country"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:fontFamily="@font/roboto_medium"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintLeft_toLeftOf="@id/ivLocation"
+        app:layout_constraintRight_toRightOf="@id/ivLocation"
+        app:layout_constraintTop_toBottomOf="@id/ivLocation">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvPleaseSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="30dp"
+
+
+        android:text="@string/please_select_your_country_to_help_us_for_give_you_a_better_experience"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+        app:fontFamily="@font/roboto_medium"
+        app:layout_constraintLeft_toLeftOf="@id/tvChooseYourCountry"
+        app:layout_constraintRight_toRightOf="@id/tvChooseYourCountry"
+        app:layout_constraintTop_toBottomOf="@id/tvChooseYourCountry">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvSelectCountry"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardCornerRadius="9dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPleaseSelect"
+        android:layout_marginTop="50dp"
+        >
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvSelectCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_country"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="20sp"
+            android:textColor="@color/grey"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            >
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clSelectedCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            >
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivFlag"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                >
+
+            </com.google.android.material.imageview.ShapeableImageView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvCountryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginLeft="60dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto_medium"
+                app:layout_constraintLeft_toLeftOf="@id/ivFlag"
+                app:layout_constraintTop_toTopOf="@id/ivFlag"
+                app:layout_constraintBottom_toBottomOf="@id/ivFlag"
+                >
+
+            </com.google.android.material.textview.MaterialTextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivForward"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/rightarrow"
+          android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+
+
+            >
+
+        </com.google.android.material.imageview.ShapeableImageView>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvDelete"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="9dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/cvSelectCountry"
+        app:layout_constraintRight_toRightOf="@id/cvSelectCountry"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="80dp"
+
+        >
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="20sp"
+        android:textColor="@color/grey"
+        android:layout_gravity="center"
+        >
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
