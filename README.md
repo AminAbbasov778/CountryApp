@@ -6,26 +6,14 @@
 
 ## 📸 Screenshots
 
-<div align="center">
+| Home Screen | Select Country Screen |
+|-------------|------------------------|
+|<img src="Screenshot/Screenshot_20250724-202108.png" width="200" height="400"  />| <img src="Screenshot/Screenshot_20250724-202134.png" width="200" height="400" /> |
 
-  <table>
-    <tr>
-      <td align="center">
-        <img src="Screenshot/Screenshot_20250724-202108.png" width="250"/>
-        <br/>
-        <strong>🏠 Home Screen</strong>
-      </td>
-      <td align="center">
-        <img src="Screenshot/Screenshot_20250724-202134.png" width="250"/>
-        <br/>
-        <strong>🌍 Select Country Screen</strong>
-      </td>
-    </tr>
-  </table>
 
-</div>
 
 ---
+
 
 ## ✨ Key Features
 
