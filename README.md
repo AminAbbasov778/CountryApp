@@ -6,11 +6,24 @@
 
 ## 📸 Screenshots
 
-| Home Screen | Select Country Screen |
-|-------------|------------------------|
-| ![](screenshots/home.png) | ![](screenshots/select_country.png) |
+<div align="center">
 
+  <table>
+    <tr>
+      <td align="center">
+        <img src="Screenshot/Screenshot_20250724-202108.png" width="250"/>
+        <br/>
+        <strong>🏠 Home Screen</strong>
+      </td>
+      <td align="center">
+        <img src="Screenshot/Screenshot_20250724-202134.png" width="250"/>
+        <br/>
+        <strong>🌍 Select Country Screen</strong>
+      </td>
+    </tr>
+  </table>
 
+</div>
 
 ---
 
